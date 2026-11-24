@@ -1,7 +1,7 @@
 import './globals.css';
 import SvgDefs from '../components/SvgDefs';
 import Effects from '../components/Effects';
-import { SITE } from '../lib/site';
+import { SITE, OG_IMAGE } from '../lib/site';
 
 export const metadata = {
   metadataBase: new URL(SITE.url),
@@ -18,7 +18,7 @@ export const metadata = {
     siteName: 'Pictrail',
     title: 'Pictrail — Your photos, sorted into the moments they belong to',
     description: 'Windows app that files every trip, outing and occasion into its own folder, using the date and place inside your photos.',
-    images: [{ url: '/assets/og-image.png', width: 1200, height: 630 }],
+    images: [OG_IMAGE],
   },
   twitter: { card: 'summary_large_image' },
 };

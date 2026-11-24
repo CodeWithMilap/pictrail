@@ -1,10 +1,15 @@
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
-import { SITE } from '../../lib/site';
+import { SITE, pageOpenGraph } from '../../lib/site';
+
+const title = 'Privacy policy';
+const description = 'Pictrail privacy policy: your photos never leave your computer.';
 
 export const metadata = {
-  title: 'Privacy policy',
-  description: 'Pictrail privacy policy: your photos never leave your computer.',
+  title,
+  description,
+  alternates: { canonical: '/privacy' },
+  openGraph: pageOpenGraph({ title: `${title} — ${SITE.name}`, description, path: '/privacy' }),
 };
 
 const mail = <a href={`mailto:${SITE.supportEmail}`}>{SITE.supportEmail}</a>;
@@ -87,7 +92,7 @@ export default function Privacy() {
 
           <h2>This website</h2>
           <p>
-            This website uses no cookies, no analytics and no third-party fonts or scripts. It is hosted on Cloudflare Pages, which
+            This website uses no cookies, no analytics and no third-party fonts or scripts. Our hosting provider
             may keep standard server logs (IP address, pages requested, time) for security and to keep the site running. The free
             trial download is served from GitHub.
           </p>

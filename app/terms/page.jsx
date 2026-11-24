@@ -2,10 +2,16 @@ import fs from 'node:fs';
 import path from 'node:path';
 import SiteHeader from '../../components/SiteHeader';
 import SiteFooter from '../../components/SiteFooter';
+import { SITE, pageOpenGraph } from '../../lib/site';
+
+const title = 'License agreement';
+const description = 'Pictrail end user license agreement.';
 
 export const metadata = {
-  title: 'License agreement',
-  description: 'Pictrail end user license agreement.',
+  title,
+  description,
+  alternates: { canonical: '/terms' },
+  openGraph: pageOpenGraph({ title: `${title} — ${SITE.name}`, description, path: '/terms' }),
 };
 
 // Read at build time from the same file the Windows installer shows, so they never differ.

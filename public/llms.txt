@@ -1,0 +1,17 @@
+# Pictrail
+
+> Pictrail sorts your photos into folders for every trip, outing and occasion, using the date and place saved in each photo. Private, offline, with undo. Try it free for 14 days.
+
+Photo organizer for Windows 10 & 11. One-time price ($19, lifetime license for up to 3 computers). Works offline. Published by Milap Dave.
+
+## Pages
+
+- [Pictrail — Photo organizer for Windows](https://pictrail.app/): features, how it works, pricing and FAQ
+- [Privacy policy](https://pictrail.app/privacy): Pictrail privacy policy: your photos never leave your computer.
+- [License agreement](https://pictrail.app/terms): Pictrail end user license agreement.
+
+## Links
+
+- [Free 14-day trial download (Windows installer)](https://github.com/CodeWithMilap/pictrail/releases/latest/download/Pictrail-Setup.exe)
+- [Buy Pictrail](https://milapdave1.gumroad.com/l/pictrail)
+- Support: support@pictrail.app

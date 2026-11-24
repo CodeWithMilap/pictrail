@@ -68,21 +68,49 @@ function TrialButton({ className = 'btn btn-primary', children = 'Try free for 1
   );
 }
 
+export const metadata = { alternates: { canonical: '/' } };
+
+// Plain text of a FAQ answer (the answers above are JSX), so the FAQ schema always matches the visible text.
+const toText = (node) =>
+  typeof node === 'string' || typeof node === 'number' ? String(node)
+    : Array.isArray(node) ? node.map(toText).join('')
+      : node?.props ? toText(node.props.children) : '';
+
+const id = (name) => `${SITE.url}/#${name}`;
+
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: 'Pictrail',
-  operatingSystem: 'Windows 10, Windows 11',
-  applicationCategory: 'MultimediaApplication',
-  softwareVersion: SITE.version,
-  offers: { '@type': 'Offer', price: SITE.priceNumber, priceCurrency: 'USD' },
-  description: 'Sorts photos into folders for every trip, outing and occasion using the date and place saved in each photo.',
+  '@graph': [
+    { '@type': 'WebSite', '@id': id('website'), url: SITE.url, name: SITE.name, publisher: { '@id': id('publisher') } },
+    { '@type': 'Person', '@id': id('publisher'), name: SITE.seller },
+    {
+      '@type': 'SoftwareApplication',
+      '@id': id('app'),
+      name: 'Pictrail',
+      url: SITE.url,
+      image: `${SITE.url}/assets/logo.svg`,
+      screenshot: `${SITE.url}/screenshots/02-review.png`,
+      operatingSystem: 'Windows 10, Windows 11',
+      applicationCategory: 'MultimediaApplication',
+      softwareVersion: SITE.version,
+      downloadUrl: SITE.trialUrl,
+      author: { '@id': id('publisher') },
+      publisher: { '@id': id('publisher') },
+      offers: { '@type': 'Offer', price: SITE.priceNumber, priceCurrency: 'USD', url: SITE.buyUrl },
+      description: 'Sorts photos into folders for every trip, outing and occasion using the date and place saved in each photo.',
+    },
+    {
+      '@type': 'FAQPage',
+      '@id': id('faq'),
+      mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: toText(a) } })),
+    },
+  ],
 };
 
 export default function Home() {
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c') }} />
       <SiteHeader home />
 
       <main id="top">
@@ -181,7 +209,7 @@ export default function Home() {
                     <li key={f.name}>
                       <Icon name="folder" className="f-icon" />
                       <span className="f-name">{f.name}<small>{f.meta}</small></span>
-                      <span className="f-thumbs">{f.thumbs.map((t) => <img key={t} src={scene(t)} alt="" width="640" height="480" />)}</span>
+                      <span className="f-thumbs">{f.thumbs.map((t) => <img key={t} src={scene(t)} alt="" width="640" height="480" loading="lazy" />)}</span>
                     </li>
                   ))}
                 </ul>
@@ -208,7 +236,7 @@ export default function Home() {
                 </span>
               </div>
               <div className="window-shot">
-                <img src="/screenshots/02-review.png" width="1600" height="900"
+                <img src="/screenshots/02-review.png" width="1600" height="900" loading="lazy"
                   alt="Pictrail's review screen: trips to Calangute, Goa and Paris grouped automatically, with grouping settings on the left and a Move button at the bottom" />
                 {MARKERS.map((m) => <span key={m.n} className="marker" style={{ left: m.left, top: m.top }} aria-hidden="true">{m.n}</span>)}
               </div>
@@ -356,7 +384,7 @@ export default function Home() {
         <section className="night finale" id="download">
           <div className="wrap">
             <div className="fan reveal" aria-hidden="true">
-              {FAN.map(([s, r, y]) => <img key={s} src={scene(s)} alt="" width="640" height="480" style={{ '--r': `${r}deg`, '--y': `${y}px` }} />)}
+              {FAN.map(([s, r, y]) => <img key={s} src={scene(s)} alt="" width="640" height="480" loading="lazy" style={{ '--r': `${r}deg`, '--y': `${y}px` }} />)}
             </div>
             <span className="kicker reveal">Start your trail</span>
             <h2 className="reveal">Every trip deserves its own folder.</h2>
