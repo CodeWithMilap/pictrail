@@ -1,0 +1,92 @@
+PICTRAIL - END USER LICENSE AGREEMENT
+
+Last updated: 24 November 2026
+
+Please read this agreement before installing or using Pictrail ("the Software").
+By installing or using the Software you agree to these terms. If you do not agree,
+do not install or use it.
+
+1. WHO WE ARE
+The Software is published by Milap Dave, India ("we", "us"). Contact: support@pictrail.app
+
+2. FREE TRIAL
+You may use the Software free of charge for a trial period of 14 days from the first
+time you start it. After the trial, you can still scan photos, review groups and undo
+earlier runs, but organizing photos requires a license.
+
+3. LICENSE
+When you buy a license (on Gumroad or through the Microsoft Store), we grant you a
+non-exclusive, non-transferable, perpetual license to use the Software:
+  a) a license bought on Gumroad may be activated on up to 3 computers that you own
+     or control;
+  b) a license bought in the Microsoft Store may be used on the devices allowed by
+     the Microsoft Store terms;
+  c) a license is for one person. A business needs one license for each person who
+     uses the Software.
+The license covers the version you bought and the updates we release for it, as long
+as we choose to provide them.
+
+4. WHAT YOU MAY NOT DO
+You may not:
+  a) share, publish, sell or give away your license key;
+  b) remove, disable or work around the trial or the license check;
+  c) copy, sell, rent, or distribute the Software or modified copies of it, or present
+     it as your own product;
+  d) reverse engineer the Software, except where the law allows this despite this term;
+  e) remove or change any copyright notices, credits or this agreement;
+  f) use the Software in breach of any law.
+
+5. PAYMENT AND REFUNDS
+Purchases on Gumroad are processed by Gumroad, and Gumroad's terms apply to the
+payment. Because you can try every feature free for 14 days before buying, ALL SALES
+ARE FINAL and we do not offer refunds, except where the law requires it. Purchases in
+the Microsoft Store follow Microsoft's terms and refund policy. If a payment is
+reversed or charged back, the license key stops working.
+
+6. LICENSE CHECKS
+The version sold on Gumroad checks your license key with Gumroad when you activate it
+and about once a week after that. It sends only the license key and the product ID.
+It keeps working without internet for up to 30 days at a time.
+
+7. YOUR FILES
+The Software moves or copies your photo files on your own computer, only when you press
+the Organize button. It keeps a log so that you can undo an organize run. Undo always
+works, with or without a license. Even so, any software can fail: KEEP A BACKUP of
+photos that matter to you. You are responsible for your files and for choosing what
+the Software does with them.
+
+8. PRIVACY
+Your photos never leave your computer. If you turn on "Detailed place names", only the
+GPS coordinates of your photos are sent to an online map service to look up place
+names. Full details are in our Privacy Policy: https://pictrail.app/privacy.html
+
+9. UPDATES
+We may release updates. The version downloaded from our website may download and
+install updates automatically; the Microsoft Store version is updated by the Store.
+
+10. THIRD-PARTY COMPONENTS
+The Software includes open-source components and data licensed under their own terms
+(for example Electron, exifr, GeoNames data under CC-BY 4.0, and OpenStreetMap data
+(c) OpenStreetMap contributors). Those terms are listed in THIRD-PARTY-NOTICES.txt,
+installed with the Software, and they apply to those components.
+
+11. NO WARRANTY
+EXCEPT AS REQUIRED BY LAW, THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY
+KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+12. LIMITATION OF LIABILITY
+TO THE MAXIMUM EXTENT ALLOWED BY LAW, WE ARE NOT LIABLE FOR ANY LOSS OF DATA, LOSS OF
+PROFIT, OR ANY INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING FROM THE
+USE OF, OR INABILITY TO USE, THE SOFTWARE, AND OUR TOTAL LIABILITY IS LIMITED TO THE
+AMOUNT YOU PAID FOR THE SOFTWARE. Nothing in this agreement limits any rights you have
+under consumer-protection laws that cannot be excluded.
+
+13. ENDING THIS AGREEMENT
+You may stop using the Software at any time by uninstalling it. This license ends
+automatically if you break these terms.
+
+14. GOVERNING LAW
+This agreement is governed by the laws of India.
+
+(c) 2026 Milap Dave. Pictrail is a product of Milap Dave. All rights reserved.
