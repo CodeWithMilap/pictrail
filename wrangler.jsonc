@@ -1,0 +1,13 @@
+// Cloudflare deploy config: serve the static Next.js export in ./out as plain assets.
+// Without this file, `wrangler deploy` auto-detects Next.js and runs the OpenNext
+// server adapter, which fails on a static export (no .next/standalone).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "pictrail",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./out",
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
