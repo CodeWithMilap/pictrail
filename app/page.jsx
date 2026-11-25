@@ -136,6 +136,7 @@ export default function Home() {
                 <a className="btn btn-ghost" href={SITE.buyUrl}>Buy Pictrail · <span className="price-tag">{SITE.price}</span></a>
               </div>
               <ul className="meta">
+                {SITE.sale && <li><b style={{ color: 'var(--trail-ink)' }}>{SITE.sale}</b></li>}
                 <li>Windows 10 &amp; 11</li>
                 <li>One-time price</li>
                 <li>Works offline</li>
@@ -321,6 +322,7 @@ export default function Home() {
               <span className="kicker">Pricing</span>
               <h2>One ticket. Every trip.</h2>
               <p>Try everything free for 14 days. Then pay once, and it&apos;s yours.</p>
+              {SITE.sale && <span className="stamp" style={{ marginTop: 18 }}>{SITE.sale}</span>}
             </div>
             <div className="ticket-wrap reveal">
               <div className="ticket">
