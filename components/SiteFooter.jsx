@@ -16,7 +16,7 @@ export default function SiteFooter() {
           <a href={`mailto:${SITE.supportEmail}`}>Contact</a>
         </nav>
         <div className="credits">
-          © 2026 {SITE.seller}. Pictrail is a product of {SITE.seller}. Place names from GeoNames (CC-BY 4.0) and © OpenStreetMap
+          © 2026 {SITE.name}. Place names from GeoNames (CC-BY 4.0) and © OpenStreetMap
           contributors. Fonts: Fraunces and Instrument Sans (SIL Open Font License).
         </div>
       </div>

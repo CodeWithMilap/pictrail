@@ -21,7 +21,7 @@ export default function Privacy() {
       <main className="wrap">
         <article className="doc">
           <h1>Privacy policy</h1>
-          <p className="updated">Last updated: 24 November 2026</p>
+          <p className="updated">Last updated: 25 November 2026</p>
 
           <p>
             <b>The short version:</b> Pictrail works on your computer. Your photos never leave it. The app has no accounts,
@@ -92,7 +92,8 @@ export default function Privacy() {
 
           <h2>This website</h2>
           <p>
-            This website uses no cookies, no analytics and no third-party fonts or scripts. Our hosting provider
+            This website uses no cookies and no third-party fonts. To count visits, it uses Cloudflare Web Analytics, which
+            does not use cookies, does not track you across websites and does not collect personal data. Our hosting provider
             may keep standard server logs (IP address, pages requested, time) for security and to keep the site running. The free
             trial download is served from GitHub.
           </p>

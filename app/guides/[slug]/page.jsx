@@ -47,8 +47,8 @@ export default async function GuidePage({ params }) {
         dateModified: meta.updated,
         image: `${SITE.url}/assets/og-image.png`,
         inLanguage: 'en',
-        author: { '@type': 'Person', '@id': LD_ID.publisher, name: SITE.seller },
-        publisher: { '@type': 'Person', '@id': LD_ID.publisher, name: SITE.seller },
+        author: { '@type': 'Organization', '@id': LD_ID.publisher, name: SITE.name, url: SITE.url },
+        publisher: { '@type': 'Organization', '@id': LD_ID.publisher, name: SITE.name, url: SITE.url, logo: `${SITE.url}/assets/logo.svg` },
         isPartOf: { '@id': LD_ID.website },
         about: { '@id': LD_ID.app },
       },
@@ -78,7 +78,7 @@ export default async function GuidePage({ params }) {
           </nav>
           <h1>{meta.title}</h1>
           <p className="updated">
-            By {SITE.seller} · <time dateTime={meta.updated}>{formatDate(meta.updated)}</time>
+            Updated <time dateTime={meta.updated}>{formatDate(meta.updated)}</time>
           </p>
           <Body />
           <GuideCta />

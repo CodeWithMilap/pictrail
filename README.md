@@ -33,4 +33,4 @@ Settings (links, price) are in `lib/site.js`. The License agreement page is buil
 - Build command: `npm run build`
 - Build output directory: `out`
 
-© 2026 Milap Dave. All rights reserved.
+© 2026 Pictrail. All rights reserved.

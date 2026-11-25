@@ -88,7 +88,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@graph': [
     { '@type': 'WebSite', '@id': id('website'), url: SITE.url, name: SITE.name, publisher: { '@id': id('publisher') } },
-    { '@type': 'Person', '@id': id('publisher'), name: SITE.seller },
+    { '@type': 'Organization', '@id': id('publisher'), name: SITE.name, url: SITE.url, logo: `${SITE.url}/assets/logo.svg`, email: SITE.supportEmail },
     {
       '@type': 'SoftwareApplication',
       '@id': id('app'),
