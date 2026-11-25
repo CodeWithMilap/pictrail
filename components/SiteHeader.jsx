@@ -16,6 +16,7 @@ export default function SiteHeader({ home = false }) {
               <a href="#faq">FAQ</a>
             </>
           )}
+          <a href="/guides">Guides</a>
           <a className="btn btn-primary btn-small" href={home ? '#download' : '/#download'}>Try it free</a>
         </nav>
       </div>

@@ -7,8 +7,18 @@ Photo organizer for Windows 10 & 11. One-time price ($19, lifetime license for u
 ## Pages
 
 - [Pictrail — Photo organizer for Windows](https://pictrail.app/): features, how it works, pricing and FAQ
+- [Changelog](https://pictrail.app/changelog): what is new in each version
 - [Privacy policy](https://pictrail.app/privacy): Pictrail privacy policy: your photos never leave your computer.
 - [License agreement](https://pictrail.app/terms): Pictrail end user license agreement.
+
+## Guides
+
+- [How to organize photos by date on Windows 10 and 11](https://pictrail.app/guides/organize-photos-by-date-windows)
+- [How to sort WhatsApp photos on your PC](https://pictrail.app/guides/sort-whatsapp-photos)
+- [How to organize travel photos by location on Windows](https://pictrail.app/guides/organize-travel-photos-by-location)
+- [How to organize phone backups and SD card photos on Windows](https://pictrail.app/guides/organize-phone-backup-sd-card-photos)
+- [Pictrail vs Windows Photos](https://pictrail.app/guides/pictrail-vs-windows-photos)
+- [Pictrail vs Google Photos](https://pictrail.app/guides/pictrail-vs-google-photos)
 
 ## Links
 

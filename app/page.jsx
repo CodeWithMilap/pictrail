@@ -42,6 +42,12 @@ const STOPS = [
   ['04-done.png', 'All organized: 59 photos copied into 6 folders', 'Organize, and relax', 'Neatly named folders in seconds, and undo is always one click away.'],
 ];
 
+const SHOTS = [
+  ['05-recent-runs.png', 'Pictrail home screen with a Recent runs list: Copied 59 photos, with Open and Undo buttons', 'Undo from the home screen', 'Recent runs stay listed, so you can undo even after closing the app.'],
+  ['07-unlock.png', 'Unlock Pictrail window with a Buy Pictrail button and a box to paste your license key', 'Unlock in seconds', 'Paste the license key from your Gumroad e-mail and press Activate.'],
+  ['06-about.png', 'Pictrail About window showing version 1.0.0, trial days left and links to support and the privacy policy', 'Help is one click away', 'Contact support, the privacy policy and your license, all from About.'],
+];
+
 const FAQ = [
   ['How does the free trial work?', <>Download Pictrail and use every feature free for 14 days. No card, no account. After the trial you can still scan, review and undo. To organize photos again, buy a license and paste the key into Pictrail.</>],
   ['How do I unlock Pictrail after buying?', <>Gumroad e-mails you a license key right after you pay. In Pictrail, click the orange <b>Trial</b> badge (or About → Manage license), paste the key and press <b>Activate</b>. You need the internet for a moment to activate.</>],
@@ -277,6 +283,10 @@ export default function Home() {
               <h2>Folder in. Moments out.</h2>
               <p>Nothing changes on your computer until you press Organize.</p>
             </div>
+            {SITE.demoVideo && (
+              <video className="demo-video reveal" src={SITE.demoVideo} poster="/screenshots/02-review.png" width="1600" height="900"
+                controls muted playsInline preload="none" aria-label="Pictrail demo: a folder of photos sorted into trip folders" />
+            )}
             <ol className="stops">
               {STOPS.map(([file, alt, title, text], i) => (
                 <li key={file} className="stop reveal">
@@ -287,6 +297,16 @@ export default function Home() {
                 </li>
               ))}
             </ol>
+            <ul className="shots">
+              {SHOTS.map(([file, alt, title, text]) => (
+                <li key={file} className="reveal">
+                  <figure>
+                    <img src={`/screenshots/${file}`} width="1600" height="900" alt={alt} loading="lazy" />
+                    <figcaption><b>{title}</b>{text}</figcaption>
+                  </figure>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
 

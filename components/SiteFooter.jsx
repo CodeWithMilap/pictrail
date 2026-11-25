@@ -9,6 +9,8 @@ export default function SiteFooter() {
           Pictrail
         </a>
         <nav aria-label="Footer">
+          <a href="/guides">Guides</a>
+          <a href="/changelog">Changelog</a>
           <a href="/privacy">Privacy</a>
           <a href="/terms">License agreement</a>
           <a href={`mailto:${SITE.supportEmail}`}>Contact</a>
